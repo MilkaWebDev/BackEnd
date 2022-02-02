@@ -1,0 +1,22 @@
+<h2>Lista de productos</h2>
+
+<% if( products.length > 0){ %>
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr> 
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Url de img</th>
+            </tr>
+            <% for(product of products){ %>
+            <tr>
+                <td><%=product.name%></td>
+                <td><%=product.price%></td>
+                <td><%=product.img%></td>
+            </tr>
+            <% }%>
+        </table>
+    </div>
+<% } else{ %>
+    <h3>No hay productos aun</h3>
+<% } %>

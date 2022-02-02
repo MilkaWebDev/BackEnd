@@ -1,0 +1,10 @@
+La verdad es que despues de usar los tres motores, prefiero EJS.
+La principal razon es que me parece que es el que mas se asemeja a la logica de Javascript y 
+me parecio mas intuitivo.
+Lo que no me gusto de Handlebars es que no se puede usar cualquier funcion que quieras de Js,
+tiene esos helpers que en mi opinion son medios limitados y tiene una sintaxis distinta para agregar
+logica dentro del codigo, no es algo super complicado pero hay que acostumbrarse.
+Pug por su parte, me parecio que estaba bueno, no se me complico con la sintaxis
+pero me gusta mas poder armar componentes o porciones de codigo reutilizable como se hace en EJS.
+
+En resumen, este TP me llevo mas tiempo del que pensaba y muchas buscadas de google.
