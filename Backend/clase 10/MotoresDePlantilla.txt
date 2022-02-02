@@ -3,7 +3,10 @@ La principal razon es que me parece que es el que mas se asemeja a la logica de 
 me parecio mas intuitivo.
 Lo que no me gusto de Handlebars es que no se puede usar cualquier funcion que quieras de Js,
 tiene esos helpers que en mi opinion son medios limitados y tiene una sintaxis distinta para agregar
-logica dentro del codigo, no es algo super complicado pero hay que acostumbrarse.
+logica dentro del codigo, no es algo super complicado pero hay que acostumbrarse. Por ultimo, me 
+parecio medio engorroso todo el proceso que hay que hacer para usarlo, tuve que googlear como ponerlo
+a andar porque tuve el mismo error que tuvo la profe en clase y con los otros dos motores, con tres lineas
+de codigo, ya estaban funcionando.
 Pug por su parte, me parecio que estaba bueno, no se me complico con la sintaxis
 pero me gusta mas poder armar componentes o porciones de codigo reutilizable como se hace en EJS.
 
