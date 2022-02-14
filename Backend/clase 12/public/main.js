@@ -1,6 +1,5 @@
 const socket = io();
 
-
 const h3warning = document.getElementById('noProductWarning');
 const listHeader = document.getElementById('listHeader');
 const formulario = document.getElementById('formulario');
@@ -18,14 +17,11 @@ class Ingreso {
     }
 };
 
-
-
 //agregar producto a la lista
 formulario.addEventListener('submit', (e) => {
     const nombre = document.getElementById('name').value;
     const precio = document.getElementById('price').value;
     const url = document.getElementById('url').value;
-
     const product = new Ingreso(nombre, precio, url);
 
     h3warning.style.display = "none";
@@ -34,7 +30,6 @@ formulario.addEventListener('submit', (e) => {
     socket.emit('listaCliente', product);
 
     e.preventDefault();
-
     }
 );
 
@@ -73,6 +68,3 @@ socket.on('mensajeServer', msn => {
     .join('<br>');
     document.querySelector('p').innerHTML = msns;
 })
-
-
-
