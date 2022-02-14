@@ -58,10 +58,3 @@ const connectedServer = httpServer.listen(PORT, () => {
 
 connectedServer.on('error', error =>(`error en el server`))
 
-/*
-app.post('/products', (req, res) => {
-    products.push(req.body);
-    console.log(products);
-    res.redirect('/');
-});
-*/
