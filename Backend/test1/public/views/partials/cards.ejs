@@ -1,0 +1,45 @@
+<% for(product of products){ %>
+  <div class="card" style="min-width: 25%; margin-bottom: 2%;">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="<%=product.img%>"
+            alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+    
+        <!--Card content-->
+        <div class="card-body">
+    
+          <!--Title-->
+          <h4 class="card-title"><%=product.nombre%></h4>
+          <!--Text-->
+          <p class="card-text"><%=product.descripcion%></p>
+          <h6 class="card-text">STOCK DISPONIBLE: <%=product.stock%></h6>
+          <h5 class="card-title"> $<%=product.precio%></h5>
+
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-dark btn-md" id="btn-<%=product.id%>"><a href="/productos/<%=product.id%>">EDITAR</a></button>
+
+    
+        </div>
+    
+      </div>
+      
+<% }%>
+
+<!--buscar una forma de que el boton quede en el footer de card
+
+<div class="card col-lg-4" style="width: 18rem; height: 50%; border: 0; margin-bottom: 2%;">
+        <img src="<%=product.img%>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><%=product.nombre%></h5>
+            <p class="card-text"><%=product.descripcion%></p>
+            <h6 class="card-text">STOCK DISPONIBLE: <%=product.stock%></h6>
+            <h5 class="card-title"> $<%=product.precio%></h5>
+            
+            <a href="/productos/<%=product.id%>" class="btn btn-dark" ">editar</a>
+        </div>
+    </div>-->

@@ -1,0 +1,46 @@
+<div class="container" style="padding: 2%;">
+    <h1 style="color: #11324D;">Ingrese Nuevo Producto</h1>
+    <br>
+    <form action="/productos" method="post" id="formulario">
+
+        <div class="form-group row col-lg-12">
+            <label for="nombre" style="font-weight: bold; font-size: 20px;">Nombre del Producto</label><br>
+            <input type="text" class="form-control" name="nombre" autocomplete="off">
+            
+        </div>
+
+        <div class="form-group row col-lg-12">
+            <label for="price" style="font-weight: bold; font-size: 20px;">Descripcion</label><br>
+            <input type="text" class="form-control" name="descripcion" autocomplete="off">
+            
+        </div>
+        
+        <div class="form-group row col-lg-12">
+            <label for="codigo" style="font-weight: bold; font-size: 20px;">Codigo</label><br>
+            <input type="text" class="form-control" name="codigo" autocomplete="off">
+            
+        </div>
+
+        <div class="form-group row col-lg-12">
+            <label for="img" style="font-weight: bold; font-size: 20px;">URL de imagen</label><br>
+            <input type="text" class="form-control" name="img" autocomplete="off">   
+        </div>
+
+        <div class="form-group row">
+            <div class="col-lg-8">
+                <label for="precio" style="font-weight: bold; font-size: 20px;">Precio</label><br>
+                <input type="number" class="form-control" name="precio" autocomplete="off">   
+            </div>
+            <div class="col-lg-4">
+                <label for="stock" style="font-weight: bold; font-size: 20px;">Stock</label><br>
+                <input type="number" class="form-control" name="stock" autocomplete="off">   
+            </div>
+        </div>
+
+        <div class="form-group row col-lg-12 justify-content-end">
+            <button id="submit-add-btn" type="submit" class="btn btn-rounded" style="background-color: #57CC99;">Guardar</button>
+        </div>
+
+    </form>
+  
+</div>
