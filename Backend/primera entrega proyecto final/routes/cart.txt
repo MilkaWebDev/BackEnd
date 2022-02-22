@@ -1,1 +1,1 @@
-[{"id":"c0","timestamp":1645533442316,"productosAgregados":[]},{"id":"c1","timestamp":1645533443956,"productosAgregados":[{"id":2,"timestamp":1645319825081,"nombre":"Zapatillas Nike Air Force 1 '07 Lx","descripcion":"zapatillas deportivas","codigo":"Item No. NI_DO2157-816","img":"https://www.moovbydexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwaf804363/products/NI_DO2157-816/NI_DO2157-816-1.JPG","precio":24.999,"cantidad":1}]},{"id":"c2","timestamp":1645533445933,"productosAgregados":[]}]
+
