@@ -15,7 +15,6 @@ router.get('/productos', (req, res) => {
 });
 
 router.post('/productos', (req, res) => {
-
     if(admin){
         const { nombre, descripcion, codigo, img, precio, stock} = req.body;
         if(nombre && descripcion && codigo && img && precio && stock){
@@ -79,9 +78,6 @@ router.delete('/productos/:id', (req, res) => {
     } else{
         res.send('No puedes acceder a esta ruta')
     }
-    
-    
-
 })
 
 module.exports = router;
