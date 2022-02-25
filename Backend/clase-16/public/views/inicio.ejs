@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="../style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <title>Ingreso de Productos</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif; font-family: 'Roboto Mono', monospace;">
+    <div class="container mt-3">
+        <div class="jumbotron" style="background-color: #E7E0C9;">
+            <%- include('./form')-%>
+
+            <div id="productsList">
+                <h3 id="noProductWarning" style="text-align: center;">No se han agregado productos aun</h3>
+
+                <div id="listHeader" style="display: none;">
+                    <h2 style="padding-bottom: 2%; color: #11324D;">Lista de productos</h2>
+                        <div class="table-responsive">
+                            <table class="table table-light" style="background-color: #FBF8F1;">
+                                <thead>
+                                    <tr> 
+                                        <th>Nombre</th>
+                                        <th>Codigo</th>
+                                        <th>Precio</th>
+                                        <th>Stock</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                     
+
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="jumbotron" style="background-color: #E7E0C9;">
+            <%- include('./chat')-%>
+        </div>
+    </div>
+
+    
+        <script src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    </body>
+</html>
